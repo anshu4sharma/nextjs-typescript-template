@@ -1,3 +1,5 @@
 declare interface IUrl {
-    url: string
+    url: string;
+    surname: string;
+    age: number;
 }
