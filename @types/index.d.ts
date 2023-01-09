@@ -1,5 +1,3 @@
-declare interface IUrl {
-    url: string;
-    surname: string;
-    age: number;
+declare interface Props {
+    children: React.ReactNode;
 }
