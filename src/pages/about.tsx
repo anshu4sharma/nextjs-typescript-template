@@ -1,9 +1,13 @@
-import React from 'react'
-
-const about = () => {
+import React from "react";
+import Layout from "layout";
+const About = () => {
   return (
-    <div>about</div>
-  )
-}
+    <div>
+      <h1>this is about page </h1>
+      <p>this is about page </p>
+    </div>
+  );
+};
 
-export default about
+export default About;
+About.Layout = Layout;
