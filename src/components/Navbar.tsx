@@ -66,13 +66,13 @@ const Navbar = () => {
                 <div ref={menu} className={`items-center transition-all  hidden justify-between w-full md:flex md:w-auto md:order-1 `} id="navbar-search">
                     <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-bold md:border-0 md:bg-white">
                         <li>
-                            <Link href="/" className={`block py-2 pl-3 pr-4 ${router.pathname == "/" ? "bg-blue-700 text-white md:text-blue-700" : "text-gray-700 bg-white"} rounded md:bg-transparent md:p-0`} aria-current="page">Home</Link>
+                            <Link href="/" className={`block py-2 pl-3 pr-4 ${router.pathname == "/" ? "bg-primary text-white md:text-primary" : "text-gray-700 bg-white"} rounded md:bg-transparent md:p-0`} aria-current="page">Home</Link>
                         </li>
                         <li>
-                            <Link href="/about" className={`block py-2 pl-3 pr-4 ${router.pathname == "/about" ? " md:text-blue-700 bg-blue-700 text-white" : "text-gray-700 bg-white"} rounded md:bg-transparent md:p-0`}>About</Link>
+                            <Link href="/about" className={`block py-2 pl-3 pr-4 ${router.pathname == "/about" ? " md:text-primary bg-primary text-white" : "text-gray-700 bg-white"} rounded md:bg-transparent md:p-0`}>About</Link>
                         </li>
                         <li>
-                            <Link href="/service" className={`block py-2 pl-3 pr-4 ${router.pathname == "/service" ? " md:text-blue-700 bg-blue-700 text-white" : "text-gray-700 bg-white "} rounded md:bg-transparent md:p-0`}>Services</Link>
+                            <Link href="/service" className={`block py-2 pl-3 pr-4 ${router.pathname == "/service" ? " md:text-primary bg-primary text-white" : "text-gray-700 bg-white "} rounded md:bg-transparent md:p-0`}>Services</Link>
                         </li>
                     </ul>
                 </div>
