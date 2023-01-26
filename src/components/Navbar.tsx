@@ -64,7 +64,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div ref={menu} className={`items-center transition-all  hidden justify-between w-full md:flex md:w-auto md:order-1 `} id="navbar-search">
-                    <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-bold md:border-0 md:bg-white">
+                    <ul className="flex flex-col tracking-wider p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-bold md:border-0 md:bg-white">
                         <li>
                             <Link href="/" className={`block py-2 pl-3 pr-4 ${router.pathname == "/" ? "bg-primary text-white md:text-primary" : "text-gray-700 bg-white"} rounded md:bg-transparent md:p-0`} aria-current="page">Home</Link>
                         </li>

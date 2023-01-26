@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "layout";
 const Service = () => {
   return (
     <div>
@@ -25,5 +24,3 @@ const Service = () => {
 };
 
 export default Service;
-
-Service.Layout = Layout;
