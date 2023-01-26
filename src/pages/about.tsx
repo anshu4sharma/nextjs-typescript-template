@@ -1,7 +1,7 @@
 import React from "react";
 import { UseGlobalContext } from "context/UserContext";
 const About = () => {
-  const data = UseGlobalContext()
+  const data = UseGlobalContext();
   console.log(data);
   return (
     <div>
