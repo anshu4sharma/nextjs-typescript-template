@@ -1,5 +1,3 @@
-import { FontAwesomeIcon  } from "@fortawesome/react-fontawesome"
-import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useRef, useEffect } from "react"
@@ -35,7 +33,7 @@ const Navbar = () => {
         <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
                 <Link href="/" className="flex items-center gap-2">
-                <span><FontAwesomeIcon icon={faCode} /></span>
+                {/* <span><FontAwesomeIcon icon={faCode} /></span> */}
                     <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Code Blocks</span>
                 </Link>
                 <div className="flex md:order-2">

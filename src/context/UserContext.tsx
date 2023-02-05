@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from "react";
 
- const UserContext = createContext<UserContextType | null>(null);
+const UserContext = createContext<UserContextType | null>(null);
 
 type UserContextType = {
   name: string;
@@ -19,7 +19,7 @@ export const UserDataProvider = ({
   return <UserContext.Provider value={state}>{children}</UserContext.Provider>;
 };
 
-// custom hook for useContext 
+// custom hook for useContext
 
 export const UseGlobalContext = () => {
   return useContext(UserContext);
