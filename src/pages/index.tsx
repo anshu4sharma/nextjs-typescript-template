@@ -7,10 +7,8 @@ const Index = () => {
   const msgref = useRef<HTMLDivElement | null>(null);
   const [name, setName] = useState("");
   const scrolltoView = () => {
-    let windowHeight = window.innerHeight;
-    if (msgref.current?.lastChild) {
-      msgref.current?.lastChild.scrollIntoView() ||
-        window.scrollTo(0, windowHeight * windowHeight);
+    if (msgref.current) {
+      msgref.current?.lastElementChild?.scrollIntoView();
     }
   };
   const handleSubmit = (e: React.SyntheticEvent) => {
@@ -39,8 +37,8 @@ const Index = () => {
   }, []);
 
   useEffect(() => {
-    scrolltoView()
-  }, [message , msgref.current?.lastChild]);
+    scrolltoView();
+  }, [message, msgref.current?.lastElementChild]);
 
   return (
     <Container>
@@ -55,7 +53,7 @@ const Index = () => {
       </label>
       <input type="checkbox" id="my-modal" className="modal-toggle" />
       <div className="modal">
-        <div  className="modal-box relative">
+        <div className="modal-box relative">
           {message?.map((msg, Index) => {
             return (
               <div
@@ -82,7 +80,6 @@ const Index = () => {
               </div>
             );
           })}
-
 
           <div className="modal-action">
             <label
